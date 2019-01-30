@@ -1,0 +1,16 @@
+{
+    "short_name": "Pitch Parfait",
+    "name": "Pitch Parfait",
+    "icons": [
+      {
+        "src": "logo192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "index.html",
+    "background_color": "#F1F1F1",
+    "display": "standalone",
+    "scope": "/pitch_parfait",
+    "theme_color": "#F1F1F1"
+  }

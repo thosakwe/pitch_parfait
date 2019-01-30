@@ -1,0 +1,137 @@
+button {
+    background-color: #f1f1f1;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
+    color: gray;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    width: 5em;
+    height: 2em;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+button.correct {
+    background-color: green;
+    border-color: #fff;
+    color: #fff;
+}
+
+button.incorrect {
+    background-color: maroon;
+    border-color: #fff;
+    color: #fff;
+}
+
+button.selected {
+    background-color: cornflowerblue;
+    border-color: #fff;
+    color: #fff;
+}
+
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f1f1f1;
+    color: gray;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav .item .fa {
+    color: gray;
+    font-size: 1.4em;
+}
+
+main {
+    padding: 1em;
+}
+
+noscript {
+    color: gray;
+}
+
+noscript h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+#game {
+    padding: 0 1em;
+}
+
+#logo {
+    padding-top: 2em;
+    max-height: 5em;
+}
+
+#replay {
+    background-color: plum;
+    border-color: #fff;
+    color: #fff;
+}
+
+#replay:hover {
+    background-color: mediumpurple;
+}
+
+#restart {
+    background-color: gold;
+    color: gray;
+    font-size: 1em;
+    width: initial;
+    height: initial;
+}
+
+#submit {
+    background-color: mediumslateblue;
+    border-color: #fff;
+    color: #fff;
+}
+
+#submit:hover {
+    background-color: slateblue;
+}
+
+#tones {
+    margin-bottom: 1.5em;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content {
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.hud {
+    display: flex;
+    flex-direction: row;
+}

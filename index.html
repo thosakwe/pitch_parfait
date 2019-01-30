@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="logo152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="logo180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="logo167.png">
+    <link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Pitch Parfait">
+    <title>Pitch Parfait</title>
+    <link rel="manifest" href="manifest.json">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="parfait.css" />
+  </head>
+  <body ontouchstart="">
+    <header>
+      <nav>
+        <div class="item">Pitch Parfait</div>
+        <span style="flex: 1"></span>
+        <a
+          class="item"
+          href="https://github.com/thosakwe/pitch_parfait"
+          target="_blank"
+        >
+          <i class="fa fa-github"></i>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <noscript> <h1>JavaScript is required.</h1> </noscript>
+      <div class="content">
+        <div id="landing">
+          <img src="logo.png" alt="Logo" id="logo" />
+          <h1>Pitch Parfait</h1>
+          <p>Perfect Pitch Test/Trainer</p>
+          <br>
+          <p><button id="start-button">Start</button></p>
+        </div>
+        <div id="game" style="display: none;">
+            <div class="hud">
+                <div>
+                    <p id="scoreboard">Correct: 0/0</p>
+                </div>
+                <span style="flex: 1"></span>
+                <div>
+                    <p>
+                        <select id="difficulty">
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </p>
+                    <p>
+                        <button id="restart">
+                            Restart
+                        </button>
+                    </p>
+                </div>
+            </div>
+            <h1 id="turn">Turn 31</h1>
+            <p id="tones">3 tones</p>
+            <p>
+                <button id="replay">
+                    <i class="fa fa-refresh"></i> Replay
+                </button>
+                <button id="submit">Submit</button>
+            </p>
+        </div>
+      </div>
+      <div class="buttons" style="display: none;">
+        <button>C</button> <button>C#</button> <button>D</button>
+        <button>D#</button> <button>E</butto> <button>F</button>
+        <button>F#</button> <button>G</button> <button>G#</button>
+        <button>A</button> <button>A#</button> <button>B</button>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.6.3/Tone.min.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-68026607-12"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-68026607-12");
+    </script>
+    <script src="parfait.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+  </body>
+</html>
